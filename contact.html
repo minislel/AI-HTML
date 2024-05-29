@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Narzędzia Generatywnej AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Narzędzia Generatywnej AI</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Formularz Kontaktowy</h2>
+        <form id="contact-form">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="subject">Temat:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="service">Wybierz usługę:</label>
+            <select id="service" name="service">
+                <option value="consulting">Konsulting AI</option>
+                <option value="development">Rozwój oprogramowania AI</option>
+                <option value="training">Szkolenia z AI</option>
+            </select>
+
+            <label for="newsletter">Zapisz się na newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Narzędzia Generatywnej AI. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
